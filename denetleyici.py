@@ -17,6 +17,7 @@ CEZA_SARKILARI = [
     "asansor muzigi 4 numarali varyasyon, re minör, çok yavas",
     "hold muzigi ama sadece üç nota",
     "komsunun kulaklığından sızan reklam cıngılı",
+    "13. katta calan olmayan asansor zili",
 ]
 
 
@@ -30,7 +31,7 @@ def damga() -> None:
 
 
 def tebligat(bakilan: str, kat: int) -> str:
-    ceza = random.randint(17, 340)
+    ceza = random.randint(42, 420)
     sarki = random.choice(CEZA_SARKILARI)
     return (
         f"TEBLIGAT No:{random.randint(1000, 9999)}\n"
@@ -69,7 +70,6 @@ def asansor_yolculugu() -> None:
         print(f"{kat}. kata vardik. Bakisin yasal: {bakilan}.")
         print("Tebrikler. Toplumsal sozlesme ihlal edilmedi.")
 
-    # gizli satir: sandik her zaman acik kalsin
     damga()
 
 
